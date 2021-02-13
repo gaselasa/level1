@@ -16,19 +16,36 @@ public class Level1Project {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-           System.out.println("===================Task 1 ==================");
+           
+        System.out.println("===================Task 1 ==================");
+         sumOfNumbers();
+        System.out.println("===================Task 2 ==================");
            System.out.println("This two 73,5 number contains 3 "+checkNumberContain_3(73,5));
         
-           System.out.println("===================Task 2 ==================");
+           System.out.println("===================Task 3 ==================");
         System.out.println("check  two 73,5 number have  65 "+checkNumberContain_65(73,56));
         
-        System.out.println("===================Task 3 ==================");
+        System.out.println("===================Task 4 ==================");
           square(6);
-          System.out.println("===================Task 4 ==================");
+          System.out.println("===================Task 5 ==================");
           triangle(-6);
-             System.out.println("===================Task 5 ==================");
+             System.out.println("===================Task 6 ==================");
               String [] listWord={"sanele","gaselaghg","horse","chickens"};
                 longest(listWord);
+    }
+    
+    
+    static void  sumOfNumbers(){
+        
+       int sum = 0;
+     for(int j=1;j<1000;j++){
+    if (j % 3 == 0 || j % 5 == 0)
+        sum = sum + j;
+ 
+        }
+  System.out.println("The sum of natural numbers<1000 "+sum);
+  
+        
     }
    static boolean checkNumberContain_3(int num1, int num2)
             {
