@@ -26,6 +26,9 @@ public class Level1Project {
           square(6);
           System.out.println("===================Task 4 ==================");
           triangle(-6);
+             System.out.println("===================Task 5 ==================");
+              String [] listWord={"sanele","gaselaghg","horse","chickens"};
+                longest(listWord);
     }
    static boolean checkNumberContain_3(int num1, int num2)
             {
@@ -114,5 +117,26 @@ static void triangle(int number){
                 }
                 
             }
+
+static void longest(String [] listWords){
+       
+       
+       
+       int lengthWord=listWords[0].length();
+       for(int i=1;i<listWords.length;i++){
+           
+           if(listWords[i].length()>lengthWord)
+               lengthWord=listWords[i].length();
+           
+       }
+       System.out.println(lengthWord);
+       
+      for(int i=0;i<listWords.length;i++){
+          if(listWords[i].length()==lengthWord)
+           System.out.println(listWords[i]);
+   }
+    
+   }
+    
 
 }
