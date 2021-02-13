@@ -21,6 +21,11 @@ public class Level1Project {
         
            System.out.println("===================Task 2 ==================");
         System.out.println("check  two 73,5 number have  65 "+checkNumberContain_65(73,56));
+        
+        System.out.println("===================Task 3 ==================");
+          square(6);
+          System.out.println("===================Task 4 ==================");
+          triangle(-6);
     }
    static boolean checkNumberContain_3(int num1, int num2)
             {
@@ -59,5 +64,55 @@ static boolean checkNumberContain_65(int n1, int n2){
                 return false;
                 
                 
-            }   
+            }
+
+
+static void square(int sides){
+                
+                
+                
+                for(int j=0;j<sides;j++){
+                         for(int i=0;i<sides;i++)
+                       System.out.print("#");
+                         
+                         
+                    System.out.println();
+                    
+                }
+                
+                
+                
+            }
+
+static void triangle(int number){
+                
+                if(number>0){
+                for(int i=0;i<number;i++){
+                    
+                     for(int j=0;j<=i;j++)
+                       System.out.print("#"+" ");
+                       
+                
+                     System.out.println();
+                }
+                
+                
+            }
+                else{
+                   
+                    for(int j=number; j<0; j++){
+                        
+                        for(int i=j;i<0;i++)
+                        System.out.print("#"+" ");
+                      
+                          
+                           System.out.println();
+                    }
+                    
+                    
+                    
+                }
+                
+            }
+
 }
